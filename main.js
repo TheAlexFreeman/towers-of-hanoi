@@ -10,7 +10,7 @@ function canMove(from, to) {
 function move(from, to) {
     if (!canMove(from, to)) return;
     const FROM = TOWERS[from];
-    const TO = TOWERS[TO];
+    const TO = TOWERS[to];
     const newHeight = TO.unshift(FROM.shift());
     console.log(`Disk of size ${TO[0]} moved from ${from} to ${to}`);
 }
