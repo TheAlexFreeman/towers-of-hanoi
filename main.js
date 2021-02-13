@@ -3,7 +3,7 @@ const TOWERS = [[], [], []];
 
 function canMove(from, to) {
     const FROM = TOWERS[from];
-    const TO = TOWERS[TO];
+    const TO = TOWERS[to];
     return FROM.length && (!TO.length || FROM[0] < TO[0]);
 }
 
